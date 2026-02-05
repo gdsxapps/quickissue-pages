@@ -1,0 +1,13 @@
+title: QuickIssue
+description: A fast way to create GitHub issues
+theme: minima
+markdown: kramdown
+
+# Build settings
+baseurl: ""
+url: ""
+
+# Exclude files from Jekyll build
+exclude:
+  - README.md
+  - LICENSE
