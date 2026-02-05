@@ -4,8 +4,8 @@ theme: minima
 markdown: kramdown
 
 # Build settings
-baseurl: ""
-url: ""
+baseurl: "/quickissue-pages"
+url: "https://gdsxapps.github.io"
 
 # Exclude files from Jekyll build
 exclude:
