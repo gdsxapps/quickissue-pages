@@ -6,17 +6,13 @@ lang: ja
 
 # QuickIssue
 
-GitHub Issue を素早く作成するためのアプリです。
+Mac から素早く GitHub Issue を作成できるアプリです。
 
 ## クイックリンク
 
-- [ヘルプ](help/) - QuickIssue の使い方
-- [法的情報](legal/) - プライバシーポリシー・利用規約
+- [ヘルプ](help/)
+- [法的情報](legal/)
 
 ## お問い合わせ
 
-メール: [gdsx.apps@gmail.com](mailto:gdsx.apps@gmail.com)
-
----
-
-[English](../)
+ご質問・ご要望は [gdsx.apps@gmail.com](mailto:gdsx.apps@gmail.com) までお気軽にどうぞ。

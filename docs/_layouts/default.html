@@ -12,39 +12,33 @@
 <body>
     <header class="site-header">
         <div class="container header-inner">
-            <a href="{{ '/' | relative_url }}" class="site-logo">QuickIssue</a>
+            <a href="{{ '/' | relative_url }}" class="site-logo">
+                <span class="logo-icon">📝</span>
+                <span class="logo-text">QuickIssue</span>
+            </a>
             <nav class="main-nav">
-                <a href="{{ '/help/' | relative_url }}">Help</a>
-                <a href="{{ '/legal/' | relative_url }}">Legal</a>
-                <a href="mailto:gdsx.apps@gmail.com">Contact</a>
+                <div class="nav-dropdown">
+                    <a href="{{ '/help/' | relative_url }}" class="nav-link">Help</a>
+                    <div class="dropdown-menu">
+                        <a href="{{ '/help/getting-started/' | relative_url }}">Getting Started</a>
+                        <a href="{{ '/help/destinations/' | relative_url }}">Destinations</a>
+                        <a href="{{ '/help/editor/' | relative_url }}">Editor</a>
+                        <a href="{{ '/help/pro/' | relative_url }}">Pro</a>
+                        <a href="{{ '/help/faq/' | relative_url }}">FAQ</a>
+                    </div>
+                </div>
+                <a href="{{ '/legal/' | relative_url }}" class="nav-link">Legal</a>
+                <a href="mailto:gdsx.apps@gmail.com" class="nav-link">Contact</a>
             </nav>
             <div class="lang-switch">
-                {% if page.lang == 'ja' %}
-                <a href="{{ '/' | relative_url }}" title="English">EN</a>
-                <span class="current">JA</span>
-                {% else %}
-                <span class="current">EN</span>
+                <span class="current" title="English">EN</span>
                 <a href="{{ '/ja/' | relative_url }}" title="日本語">JA</a>
-                {% endif %}
             </div>
         </div>
     </header>
 
     <main class="site-main">
         <div class="container">
-            {% if page.breadcrumbs %}
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-                {% for crumb in page.breadcrumbs %}
-                {% if forloop.last %}
-                <span class="current">{{ crumb.title }}</span>
-                {% else %}
-                <a href="{{ crumb.url | relative_url }}">{{ crumb.title }}</a>
-                <span class="separator">/</span>
-                {% endif %}
-                {% endfor %}
-            </nav>
-            {% endif %}
-
             <article class="content">
                 {{ content }}
             </article>

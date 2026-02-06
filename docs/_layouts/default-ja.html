@@ -12,34 +12,29 @@
 <body>
     <header class="site-header">
         <div class="container header-inner">
-            <a href="{{ '/ja/' | relative_url }}" class="site-logo">QuickIssue</a>
+            <a href="{{ '/ja/' | relative_url }}" class="site-logo">
+                <span class="logo-icon">📝</span>
+                <span class="logo-text">QuickIssue</span>
+            </a>
             <nav class="main-nav">
-                <a href="{{ '/ja/help/' | relative_url }}">ヘルプ</a>
-                <a href="{{ '/ja/legal/' | relative_url }}">法的情報</a>
-                <a href="mailto:gdsx.apps@gmail.com">お問い合わせ</a>
+                <div class="nav-dropdown">
+                    <a href="{{ '/ja/help/' | relative_url }}" class="nav-link">ヘルプ</a>
+                    <div class="dropdown-menu">
+                        <a href="{{ '/ja/help/getting-started/' | relative_url }}">はじめに</a>
+                    </div>
+                </div>
+                <a href="{{ '/ja/legal/' | relative_url }}" class="nav-link">法的情報</a>
+                <a href="mailto:gdsx.apps@gmail.com" class="nav-link">お問い合わせ</a>
             </nav>
             <div class="lang-switch">
                 <a href="{{ '/' | relative_url }}" title="English">EN</a>
-                <span class="current">JA</span>
+                <span class="current" title="日本語">JA</span>
             </div>
         </div>
     </header>
 
     <main class="site-main">
         <div class="container">
-            {% if page.breadcrumbs %}
-            <nav class="breadcrumb" aria-label="パンくずリスト">
-                {% for crumb in page.breadcrumbs %}
-                {% if forloop.last %}
-                <span class="current">{{ crumb.title }}</span>
-                {% else %}
-                <a href="{{ crumb.url | relative_url }}">{{ crumb.title }}</a>
-                <span class="separator">/</span>
-                {% endif %}
-                {% endfor %}
-            </nav>
-            {% endif %}
-
             <article class="content">
                 {{ content }}
             </article>

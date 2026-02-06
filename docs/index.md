@@ -5,17 +5,13 @@ title: QuickIssue
 
 # QuickIssue
 
-A fast way to create GitHub issues.
+A fast way to create GitHub issues from your Mac.
 
 ## Quick Links
 
-- [Help](help/) - Learn how to use QuickIssue
-- [Legal](legal/) - Privacy Policy & Terms of Use
+- [Help](help/)
+- [Legal](legal/)
 
 ## Contact
 
-Email: [gdsx.apps@gmail.com](mailto:gdsx.apps@gmail.com)
-
----
-
-[日本語](ja/)
+Questions or feedback? Email us at [gdsx.apps@gmail.com](mailto:gdsx.apps@gmail.com)

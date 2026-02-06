@@ -2,11 +2,16 @@ title: QuickIssue
 description: A fast way to create GitHub issues
 markdown: kramdown
 
-# theme: minima  # Disabled - using custom layout
+# Explicitly disable themes
+theme: null
+remote_theme: null
 
 # Build settings
 baseurl: "/quickissue-pages"
 url: "https://gdsxapps.github.io"
+
+# Disable automatic page generation in header
+header_pages: []
 
 # Exclude files from Jekyll build
 exclude:
@@ -14,3 +19,5 @@ exclude:
   - LICENSE
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - vendor
