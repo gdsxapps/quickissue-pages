@@ -19,4 +19,4 @@ This page explains how to generate and configure a GitHub Personal Access Token 
 
 ---
 
-[← Back to Getting Started](index.html)
+[← Back to Getting Started](./)

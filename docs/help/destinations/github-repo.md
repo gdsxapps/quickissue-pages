@@ -11,4 +11,4 @@ Learn how to add and manage GitHub repositories in QuickIssue.
 
 ---
 
-[← Back to Destinations](index.html)
+[← Back to Destinations](./)
