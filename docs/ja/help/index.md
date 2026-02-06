@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-ja
 title: ヘルプ - QuickIssue
 lang: ja
 ---

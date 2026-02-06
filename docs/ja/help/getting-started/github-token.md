@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-ja
 title: GitHub トークンの設定 - QuickIssue
 lang: ja
 ---
@@ -20,4 +20,4 @@ lang: ja
 
 ---
 
-[← はじめにに戻る](index.html)
+[← はじめにに戻る](./)

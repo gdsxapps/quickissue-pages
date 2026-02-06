@@ -11,4 +11,4 @@ This app uses the Apple Standard End User License Agreement (EULA).
 
 ---
 
-[← Back to Legal](index.html)
+[← Back to Legal](./)

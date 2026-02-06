@@ -30,4 +30,4 @@ Email: [gdsx.apps@gmail.com](mailto:gdsx.apps@gmail.com)
 
 ---
 
-[← Back to Legal](index.html)
+[← Back to Legal](./)

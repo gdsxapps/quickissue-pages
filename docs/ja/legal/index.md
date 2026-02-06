@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-ja
 title: 法的情報 - QuickIssue
 lang: ja
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-ja
 title: プライバシーポリシー - QuickIssue
 lang: ja
 ---
@@ -31,4 +31,4 @@ QuickIssue はあなたのプライバシーを尊重します。
 
 ---
 
-[← 法的情報に戻る](index.html)
+[← 法的情報に戻る](./)

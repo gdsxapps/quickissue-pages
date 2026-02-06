@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-ja
 title: 利用規約 - QuickIssue
 lang: ja
 ---
@@ -12,4 +12,4 @@ lang: ja
 
 ---
 
-[← 法的情報に戻る](index.html)
+[← 法的情報に戻る](./)

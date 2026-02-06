@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="{{ '/' | relative_url }}" class="site-logo">QuickIssue</a>
+            <nav class="main-nav">
+                <a href="{{ '/help/' | relative_url }}">Help</a>
+                <a href="{{ '/legal/' | relative_url }}">Legal</a>
+                <a href="mailto:gdsx.apps@gmail.com">Contact</a>
+            </nav>
+            <div class="lang-switch">
+                {% if page.lang == 'ja' %}
+                <a href="{{ '/' | relative_url }}" title="English">EN</a>
+                <span class="current">JA</span>
+                {% else %}
+                <span class="current">EN</span>
+                <a href="{{ '/ja/' | relative_url }}" title="日本語">JA</a>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            {% if page.breadcrumbs %}
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                {% for crumb in page.breadcrumbs %}
+                {% if forloop.last %}
+                <span class="current">{{ crumb.title }}</span>
+                {% else %}
+                <a href="{{ crumb.url | relative_url }}">{{ crumb.title }}</a>
+                <span class="separator">/</span>
+                {% endif %}
+                {% endfor %}
+            </nav>
+            {% endif %}
+
+            <article class="content">
+                {{ content }}
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ 'now' | date: '%Y' }} QuickIssue. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="{{ '/legal/privacy.html' | relative_url }}">Privacy</a>
+                <a href="{{ '/legal/terms.html' | relative_url }}">Terms</a>
+                <a href="mailto:gdsx.apps@gmail.com">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

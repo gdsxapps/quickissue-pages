@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="{{ '/ja/' | relative_url }}" class="site-logo">QuickIssue</a>
+            <nav class="main-nav">
+                <a href="{{ '/ja/help/' | relative_url }}">ヘルプ</a>
+                <a href="{{ '/ja/legal/' | relative_url }}">法的情報</a>
+                <a href="mailto:gdsx.apps@gmail.com">お問い合わせ</a>
+            </nav>
+            <div class="lang-switch">
+                <a href="{{ '/' | relative_url }}" title="English">EN</a>
+                <span class="current">JA</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            {% if page.breadcrumbs %}
+            <nav class="breadcrumb" aria-label="パンくずリスト">
+                {% for crumb in page.breadcrumbs %}
+                {% if forloop.last %}
+                <span class="current">{{ crumb.title }}</span>
+                {% else %}
+                <a href="{{ crumb.url | relative_url }}">{{ crumb.title }}</a>
+                <span class="separator">/</span>
+                {% endif %}
+                {% endfor %}
+            </nav>
+            {% endif %}
+
+            <article class="content">
+                {{ content }}
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ 'now' | date: '%Y' }} QuickIssue. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="{{ '/ja/legal/privacy.html' | relative_url }}">プライバシー</a>
+                <a href="{{ '/ja/legal/terms.html' | relative_url }}">利用規約</a>
+                <a href="mailto:gdsx.apps@gmail.com">お問い合わせ</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
