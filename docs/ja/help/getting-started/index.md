@@ -10,8 +10,8 @@ QuickIssue のセットアップと使い方を学びましょう。
 
 ## トピック
 
-- [GitHub トークンの設定](github-token.html) - GitHub Personal Access Token の設定方法
+- [セットアップガイド (English)](../../../help/getting-started/) - 詳細なセットアップ手順（スクリーンショット付き）
 
 ---
 
-[← ヘルプに戻る](../)
+[← ホームに戻る](../../)
