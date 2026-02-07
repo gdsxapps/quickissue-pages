@@ -90,10 +90,11 @@ title: Setup Guide - QuickIssue
 	</header>
 	<div class="page-body">
 		<div style="display:contents" dir="auto">
-			<h2 id="2ff0e728-74eb-8002-b47e-c30a9089d46b" class="">Setup</h2>
+			<h2 id="step-1-create-token">Step 1: Create a GitHub Token</h2>
 		</div>
 		<div style="display:contents" dir="auto">
-			<p id="2ff0e728-74eb-801e-83db-dca5eaa0c1e1" class="">First, create a token on GitHub.</p>
+			<p>Click the <strong>"Start Initial Setup"</strong> button in QuickIssue, then click <strong>"Issue Token on
+					GitHub"</strong> to open the GitHub token creation page.</p>
 		</div>
 		<div style="display:contents" dir="ltr">
 			<figure id="3000e728-74eb-8077-97fd-ef2253a83e4a" class="image">
@@ -110,8 +111,16 @@ title: Setup Guide - QuickIssue
 			</figure>
 		</div>
 		<div style="display:contents" dir="auto">
-			<p id="2ff0e728-74eb-8026-8a2f-da9fb7817a84" class="">Go to the GitHub authentication page.</p>
-			<p id="3000e728-74eb-80dd-8273-ec4258fec282" class="">Please authenticate.</p>
+			<h3 id="github-authentication">GitHub Authentication</h3>
+			<p>GitHub requires authentication before you can create a token. There are two methods available:</p>
+			<ul>
+				<li><strong>Email verification</strong> - A code will be sent to your registered email</li>
+				<li><strong>GitHub Mobile app</strong> - Approve the request from your phone</li>
+			</ul>
+		</div>
+		<div style="display:contents" dir="auto">
+			<h4>Option A: Email Verification</h4>
+			<p>Click <strong>"Verify via email"</strong> and enter the code sent to your email.</p>
 		</div>
 		<div style="display:contents" dir="ltr">
 			<figure id="3000e728-74eb-80cd-bc34-da4910af2919" class="image">
@@ -138,7 +147,9 @@ title: Setup Guide - QuickIssue
 			<p id="2ff0e728-74eb-807f-9b72-ea63e2da7e67" class="">Enter the code you received via email here.</p>
 		</div>
 		<div style="display:contents" dir="auto">
-			<h3 id="2ff0e728-74eb-80fc-8804-c2cef58ded2e" class="">Authentication using mobile app</h3>
+			<h4 id="option-b-mobile">Option B: GitHub Mobile App</h4>
+			<p>If you have the GitHub Mobile app installed, click <strong>"Use GitHub Mobile"</strong> and enter the
+				displayed number in your app.</p>
 		</div>
 		<div style="display:contents" dir="ltr">
 			<figure id="3000e728-74eb-8058-a2df-d7189ce42abe" class="image">
@@ -160,6 +171,10 @@ title: Setup Guide - QuickIssue
 			<p id="3000e728-74eb-807b-b9bd-d58cf68c978f" class="">Once authenticated, you will be redirected to this
 				screen.</p>
 		</div>
+		<div style="display:contents" dir="auto">
+			<h3 id="configure-token">Configure Your Token</h3>
+			<p>Once authenticated, you'll see the token creation screen. Configure the following:</p>
+		</div>
 		<div style="display:contents" dir="ltr">
 			<figure id="3000e728-74eb-803e-98b9-f1699e11e9cb" class="image">
 				<a href="QuickIssue%20Setup/CleanShot_2026-02-07_at_14.08.572x.webp">
@@ -168,11 +183,18 @@ title: Setup Guide - QuickIssue
 			</figure>
 		</div>
 		<div style="display:contents" dir="auto">
-			<p id="3000e728-74eb-806e-b91e-c5913e849e88" class="">Enter the token name and expiration period.</p>
-			<ol type="1" id="3000e728-74eb-80e8-9d0e-c992686812e9" class="numbered-list" start="1">
-				<li>Enter token name<br />Names that have been used before cannot be reused</li>
-				<li>Expiration period<br />Setting a longer period is more convenient</li>
+			<ol type="1" class="numbered-list" start="1">
+				<li><strong>Token name</strong> - Enter a descriptive name like "QuickIssue"<br />(Names that have been
+					used before cannot be reused)</li>
+				<li><strong>Expiration</strong> - Choose how long the token will be valid</li>
 			</ol>
+			<div class="tip-box">
+				<p>💡 <strong>Tip:</strong> Setting a longer expiration period (e.g., 90 days) is more convenient.</p>
+			</div>
+			<div class="tip-box">
+				<p>📌 <strong>Important:</strong> Make sure the <code>repo</code> scope is checked. This permission is
+					required for QuickIssue to create issues.</p>
+			</div>
 		</div>
 		<div style="display:contents" dir="ltr">
 			<figure id="3000e728-74eb-80ed-a8a6-e32c6b7ae43e" class="image">
@@ -182,9 +204,15 @@ title: Setup Guide - QuickIssue
 			</figure>
 		</div>
 		<div style="display:contents" dir="auto">
-			<p id="3000e728-74eb-806c-8ce2-e61ffa0b704d" class="">Press the Generate Token button at the bottom.</p>
-			<p id="3000e728-74eb-80c7-b647-e829e2586b80" class="">The token is displayed on this screen.</p>
-			<p id="3000e728-74eb-8016-a044-c417d13f4df1" class="">Copy it. (Please press the copy button)</p>
+			<p>Scroll down and click the <strong>"Generate token"</strong> button.</p>
+		</div>
+		<div style="display:contents" dir="auto">
+			<h3 id="copy-token">Copy Your Token</h3>
+			<p>Your new token will be displayed. Click the copy button to copy it to your clipboard.</p>
+			<div class="warning-box">
+				<p>⚠️ <strong>Warning:</strong> The token is only displayed once! Make sure to copy it now. If you lose
+					it, you'll need to create a new token.</p>
+			</div>
 		</div>
 		<div style="display:contents" dir="ltr">
 			<figure id="3000e728-74eb-80a3-93de-cd7f076c5ffb" class="image">
@@ -194,10 +222,12 @@ title: Setup Guide - QuickIssue
 			</figure>
 		</div>
 		<div style="display:contents" dir="auto">
-			<p id="3000e728-74eb-80cd-bd67-cac29bf266eb" class="">Back To App</p>
-			<p id="3000e728-74eb-80af-a65c-e876995a4b4c" class="">Return to the app and paste the token in step 2
-				Paste your token.</p>
-			<p id="3000e728-74eb-8065-a2a3-e5e9932f2951" class="">After pasting, save it.</p>
+			<h2 id="step-2-paste-token">Step 2: Paste Token in QuickIssue</h2>
+			<p>Return to QuickIssue. In the <strong>"Paste your token"</strong> section:</p>
+			<ol type="1" class="numbered-list" start="1">
+				<li>Paste the token you copied from GitHub</li>
+				<li>Click <strong>"Save Token"</strong> to save it</li>
+			</ol>
 		</div>
 		<div style="display:contents" dir="ltr">
 			<figure id="3000e728-74eb-8061-8193-c2926bf997fe" class="image">
@@ -207,7 +237,9 @@ title: Setup Guide - QuickIssue
 			</figure>
 		</div>
 		<div style="display:contents" dir="auto">
-			<p id="3000e728-74eb-800c-a8da-e65e854455f6" class="">Proceed to step 3</p>
+			<h2 id="step-3-add-destination">Step 3: Add Destination Repository</h2>
+			<p>Now configure where your issues will be sent. Click <strong>"Add destination"</strong> to select a
+				repository.</p>
 		</div>
 		<div style="display:contents" dir="ltr">
 			<figure id="3000e728-74eb-8043-942f-e3bc44f0a494" class="image">
@@ -227,11 +259,12 @@ title: Setup Guide - QuickIssue
 			</figure>
 		</div>
 		<div style="display:contents" dir="auto">
-			<p id="3000e728-74eb-80d4-b0ec-e65dd02d00d5" class="">A list of available repositories will be
-				displayed.</p>
-			<p id="3000e728-74eb-8027-b98d-e6a31738fabc" class="">Select the repository you want to register as a
-				destination.</p>
-			<p id="3000e728-74eb-8039-aeaa-ca140c11cc9c" class="">In the free version, you can select only one.</p>
+			<p>A list of available repositories will be displayed. Click the <strong>+</strong> button next to the
+				repository you want to use as a destination.</p>
+			<div class="tip-box">
+				<p>💡 <strong>Note:</strong> In the free version, you can register only one repository. Upgrade to Pro
+					for multiple destinations.</p>
+			</div>
 		</div>
 		<div style="display:contents" dir="ltr">
 			<figure id="3000e728-74eb-8051-b2d5-ded9e001daf1" class="image">
@@ -241,7 +274,9 @@ title: Setup Guide - QuickIssue
 			</figure>
 		</div>
 		<div style="display:contents" dir="auto">
-			<p id="3000e728-74eb-80d6-81c7-d50148585937" class="">You are now ready to use the app.</p>
+			<h2 id="setup-complete">🎉 Setup Complete!</h2>
+			<p>You're all set! QuickIssue is now configured and ready to use. Start creating issues by typing in the
+				text field and clicking <strong>Send</strong>.</p>
 		</div>
 		<div style="display:contents" dir="ltr">
 			<figure id="3000e728-74eb-8048-a607-c605d39d6b7e" class="link-to-page">
