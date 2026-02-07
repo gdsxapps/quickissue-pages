@@ -1,0 +1,61 @@
+---
+layout: help
+title: RATE-001 - QuickIssue
+---
+
+<article class="page sans">
+    <header>
+        <h1 class="page-title">Error: RATE-001</h1>
+    </header>
+    <div class="page-body">
+        <div class="warning-box">
+            <p>⚠️ <strong>GitHub rate limit exceeded</strong> - You've made too many requests to GitHub in a short
+                period.</p>
+        </div>
+
+        <h2>What happened?</h2>
+        <p>GitHub limits the number of API requests you can make per hour. This error occurs when that limit is reached.
+        </p>
+        <ul>
+            <li>With authentication: <strong>5,000 requests/hour</strong></li>
+            <li>Without authentication: <strong>60 requests/hour</strong></li>
+        </ul>
+
+        <h2>How to fix it</h2>
+        <ol>
+            <li><strong>Wait for the limit to reset</strong>
+                <ul>
+                    <li>The rate limit resets every hour</li>
+                    <li>You can check your limit at <a href="https://api.github.com/rate_limit" target="_blank">GitHub
+                            Rate Limit API</a></li>
+                </ul>
+            </li>
+            <li><strong>Reduce request frequency</strong>
+                <ul>
+                    <li>Avoid refreshing repository lists repeatedly</li>
+                    <li>Submit issues in batches rather than one at a time rapidly</li>
+                </ul>
+            </li>
+            <li><strong>Ensure you're authenticated</strong>
+                <ul>
+                    <li>Authenticated requests have a much higher limit</li>
+                    <li>Check that your token is valid in Settings</li>
+                </ul>
+            </li>
+        </ol>
+
+        <div class="tip-box">
+            <p>💡 <strong>Tip:</strong> If you regularly hit rate limits, consider using a GitHub App token instead of a
+                Personal Access Token for higher limits.</p>
+        </div>
+
+        <h2>Still having issues?</h2>
+        <p>Contact us at <a href="mailto:gdsx.apps@gmail.com">gdsx.apps@gmail.com</a> if you believe this is happening
+            incorrectly.</p>
+
+        <hr />
+        <figure class="link-to-page">
+            <a href="./">← Back to Error Codes</a>
+        </figure>
+    </div>
+</article>

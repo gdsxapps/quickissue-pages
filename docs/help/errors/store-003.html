@@ -1,0 +1,50 @@
+---
+layout: help
+title: STORE-003 - QuickIssue
+---
+
+<article class="page sans">
+    <header>
+        <h1 class="page-title">Error: STORE-003</h1>
+    </header>
+    <div class="page-body">
+        <div class="warning-box">
+            <p>⚠️ <strong>Failed to initialize settings</strong> - QuickIssue couldn't load or create its settings file.
+            </p>
+        </div>
+
+        <h2>What happened?</h2>
+        <p>This error occurs when QuickIssue cannot access its settings storage. This may happen due to:</p>
+        <ul>
+            <li>Corrupted settings file</li>
+            <li>Permission issues with the app's data folder</li>
+            <li>Disk errors</li>
+        </ul>
+
+        <h2>How to fix it</h2>
+        <ol>
+            <li><strong>Reset QuickIssue settings</strong>
+                <ul>
+                    <li>Quit QuickIssue</li>
+                    <li>Delete the QuickIssue preferences file from <code>~/Library/Preferences/</code></li>
+                    <li>Restart QuickIssue</li>
+                </ul>
+            </li>
+            <li><strong>Check disk health</strong> using Disk Utility</li>
+            <li><strong>Reinstall QuickIssue</strong> if the issue persists</li>
+        </ol>
+
+        <div class="tip-box">
+            <p>💡 <strong>Note:</strong> Resetting settings will require you to set up your token and repositories
+                again.</p>
+        </div>
+
+        <h2>Still having issues?</h2>
+        <p>Contact us at <a href="mailto:gdsx.apps@gmail.com">gdsx.apps@gmail.com</a> with the error details.</p>
+
+        <hr />
+        <figure class="link-to-page">
+            <a href="./">← Back to Error Codes</a>
+        </figure>
+    </div>
+</article>

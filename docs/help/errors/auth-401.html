@@ -1,0 +1,56 @@
+---
+layout: help
+title: AUTH-401 - QuickIssue
+---
+
+<article class="page sans">
+    <header>
+        <h1 class="page-title">Error: AUTH-401</h1>
+    </header>
+    <div class="page-body">
+        <div class="warning-box">
+            <p>⚠️ <strong>Authentication error occurred</strong> - Your saved GitHub token is invalid or has expired.
+            </p>
+        </div>
+
+        <h2>What happened?</h2>
+        <p>This error occurs when QuickIssue cannot authenticate with GitHub using your saved Personal Access Token
+            (PAT). This usually means:</p>
+        <ul>
+            <li>Your token has <strong>expired</strong></li>
+            <li>The token was <strong>revoked</strong> on GitHub</li>
+            <li>The token doesn't have the required <strong>permissions</strong> (repo scope)</li>
+        </ul>
+
+        <h2>How to fix it</h2>
+        <ol>
+            <li>Open <strong>QuickIssue Settings</strong> (gear icon)</li>
+            <li>Go to <strong>Authentication</strong> section</li>
+            <li>Delete the existing token</li>
+            <li>Create a new token on GitHub:
+                <ul>
+                    <li>Go to <a href="https://github.com/settings/tokens" target="_blank">GitHub Token Settings</a>
+                    </li>
+                    <li>Click "Generate new token (classic)"</li>
+                    <li>Select the <code>repo</code> scope</li>
+                    <li>Set a longer expiration if desired</li>
+                </ul>
+            </li>
+            <li>Copy the new token and paste it in QuickIssue</li>
+        </ol>
+
+        <div class="tip-box">
+            <p>💡 <strong>Tip:</strong> Set a longer expiration period (90 days or more) to avoid frequent
+                re-authentication.</p>
+        </div>
+
+        <h2>Still having issues?</h2>
+        <p>Contact us at <a href="mailto:gdsx.apps@gmail.com">gdsx.apps@gmail.com</a> with details about when the error
+            occurs.</p>
+
+        <hr />
+        <figure class="link-to-page">
+            <a href="./">← Back to Error Codes</a>
+        </figure>
+    </div>
+</article>

@@ -1,0 +1,52 @@
+---
+layout: help
+title: STORE-001 - QuickIssue
+---
+
+<article class="page sans">
+    <header>
+        <h1 class="page-title">Error: STORE-001</h1>
+    </header>
+    <div class="page-body">
+        <div class="warning-box">
+            <p>⚠️ <strong>Failed to save token</strong> - QuickIssue couldn't store your GitHub token securely.</p>
+        </div>
+
+        <h2>What happened?</h2>
+        <p>This error occurs when QuickIssue cannot save your Personal Access Token to the system's secure storage
+            (Keychain on macOS).</p>
+
+        <h2>How to fix it</h2>
+        <ol>
+            <li><strong>Check Keychain Access</strong>
+                <ul>
+                    <li>Open "Keychain Access" app on your Mac</li>
+                    <li>Look for any QuickIssue-related entries</li>
+                    <li>Delete them if corrupted</li>
+                </ul>
+            </li>
+            <li><strong>Restart QuickIssue</strong> and try saving the token again</li>
+            <li><strong>Restart your Mac</strong> if the issue persists</li>
+            <li><strong>Check disk permissions</strong>
+                <ul>
+                    <li>Go to System Preferences → Security & Privacy → Privacy</li>
+                    <li>Ensure QuickIssue has necessary permissions</li>
+                </ul>
+            </li>
+        </ol>
+
+        <div class="tip-box">
+            <p>💡 <strong>Tip:</strong> Make sure you have enough free disk space, as Keychain operations may fail on
+                full disks.</p>
+        </div>
+
+        <h2>Still having issues?</h2>
+        <p>Contact us at <a href="mailto:gdsx.apps@gmail.com">gdsx.apps@gmail.com</a> with details about your macOS
+            version.</p>
+
+        <hr />
+        <figure class="link-to-page">
+            <a href="./">← Back to Error Codes</a>
+        </figure>
+    </div>
+</article>

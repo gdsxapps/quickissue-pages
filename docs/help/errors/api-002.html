@@ -1,0 +1,51 @@
+---
+layout: help
+title: API-002 - QuickIssue
+---
+
+<article class="page sans">
+    <header>
+        <h1 class="page-title">Error: API-002</h1>
+    </header>
+    <div class="page-body">
+        <div class="warning-box">
+            <p>⚠️ <strong>Failed to update issue</strong> - QuickIssue couldn't update the GitHub issue.</p>
+        </div>
+
+        <h2>What happened?</h2>
+        <p>This error occurs when an issue update request fails. Possible causes:</p>
+        <ul>
+            <li>The issue was deleted or closed</li>
+            <li>You no longer have permission to edit the issue</li>
+            <li>Network interruption during the request</li>
+            <li>GitHub API is experiencing issues</li>
+        </ul>
+
+        <h2>How to fix it</h2>
+        <ol>
+            <li><strong>Check the issue on GitHub</strong>
+                <ul>
+                    <li>Verify the issue still exists</li>
+                    <li>Check if you have write access to the repository</li>
+                </ul>
+            </li>
+            <li><strong>Verify your token permissions</strong>
+                <ul>
+                    <li>Ensure your token has the <code>repo</code> scope</li>
+                </ul>
+            </li>
+            <li><strong>Check GitHub status</strong> at <a href="https://www.githubstatus.com"
+                    target="_blank">githubstatus.com</a></li>
+            <li><strong>Try again</strong> after a few moments</li>
+        </ol>
+
+        <h2>Still having issues?</h2>
+        <p>Contact us at <a href="mailto:gdsx.apps@gmail.com">gdsx.apps@gmail.com</a> with the issue URL and error
+            details.</p>
+
+        <hr />
+        <figure class="link-to-page">
+            <a href="./">← Back to Error Codes</a>
+        </figure>
+    </div>
+</article>
