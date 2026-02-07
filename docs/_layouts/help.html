@@ -19,13 +19,24 @@
                 <span class="current" title="日本語">日本語</span>
                 {% else %}
                 <span class="current" title="English">English</span>
-                <a href="{{ site.baseurl }}/ja/help/getting-started/" title="日本語">日本語</a>
+                <a href="{{ site.baseurl }}/ja/help/getting-started/" title="日本語" class="lang-partial">日本語</a>
                 {% endif %}
             </nav>
         </div>
     </header>
 
     <main class="help-main">
+        <section class="help-intro">
+            {% if page.url contains '/ja/' %}
+            <h1>QuickIssue ヘルプ</h1>
+            <p>セットアップ、GitHub連携、日常的な使い方のガイドです。</p>
+            <p class="help-lang-note">📖 詳細なセットアップガイド（スクリーンショット付き）は<a
+                    href="{{ site.baseurl }}/help/getting-started/">英語版</a>をご覧ください。</p>
+            {% else %}
+            <h1>QuickIssue Help</h1>
+            <p>Guides for setup, GitHub integration, and daily usage.</p>
+            {% endif %}
+        </section>
         <div class="notion-content">
             {{ content }}
         </div>

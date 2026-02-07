@@ -84,6 +84,52 @@ body {
     }
 }
 
+/* Help intro section */
+.help-intro {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.help-intro h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0 0 0.5rem;
+}
+
+.help-intro p {
+    margin: 0.25rem 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+.help-lang-note {
+    margin-top: 1rem !important;
+    padding: 0.75rem 1rem;
+    background-color: #f0f7ff;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.help-lang-note a {
+    color: #0066cc;
+    font-weight: 500;
+}
+
+/* Partial language availability indicator */
+.help-lang-switch a.lang-partial {
+    color: #888;
+    font-style: italic;
+}
+
+.help-lang-switch a.lang-partial::after {
+    content: "*";
+    font-size: 0.75em;
+    vertical-align: super;
+}
+
 /* Footer */
 .help-footer {
     text-align: center;
