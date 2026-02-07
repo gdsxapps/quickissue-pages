@@ -27,7 +27,10 @@ QuickIssue はあなたのプライバシーを尊重します。
 
 ## お問い合わせ
 
-メール: [gdsx.apps@gmail.com](mailto:gdsx.apps@gmail.com)
+本プライバシーポリシーに関するご質問がある場合は、  
+以下のメールアドレスまでご連絡ください。
+
+**gdsx.apps@gmail.com**
 
 ---
 

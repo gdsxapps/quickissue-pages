@@ -24,9 +24,12 @@ We do not store credit card or payment information.
 - Google Play
 - RevenueCat
 
-## Contact
+## Contact Information
 
-Email: [gdsx.apps@gmail.com](mailto:gdsx.apps@gmail.com)
+If you have any questions regarding this Privacy Policy,  
+please contact us at:
+
+**gdsx.apps@gmail.com**
 
 ---
 
