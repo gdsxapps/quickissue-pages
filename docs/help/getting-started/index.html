@@ -188,45 +188,19 @@ title: Setup Guide - QuickIssue
 					used before cannot be reused)</li>
 				<li><strong>Expiration</strong> - Choose how long the token will be valid (recommended: 30–90 days)</li>
 			</ol>
-
-			<h4 id="about-expiration">About Token Expiration</h4>
-			<p>For security reasons, we recommend setting an expiration period of <strong>30 to 90 days</strong> rather
-				than using a long-lived or non-expiring token. While longer expirations are more convenient, shorter
-				periods reduce risk if your token is ever compromised.</p>
 			<div class="tip-box">
-				<p>💡 <strong>Tip:</strong> When your token expires, simply follow the same steps to create a new token
-					and update it in QuickIssue. The app will prompt you when re-authentication is needed.</p>
+				<p>📌 <strong>Important:</strong> Make sure the <code>repo</code> scope is checked. This permission is
+					required for QuickIssue to create issues.</p>
 			</div>
-
-			<h4 id="about-repo-scope">Understanding the <code>repo</code> Scope</h4>
-			<p>QuickIssue requires the <code>repo</code> scope to create issues on your behalf. However, you should
-				understand what this permission grants:</p>
-			<ul>
-				<li>The <code>repo</code> scope provides <strong>full read and write access</strong> to all your public
-					and private repositories</li>
-				<li>This includes access to code, commit statuses, repository invitations, collaborators, and more</li>
-				<li>QuickIssue only uses this permission to create issues, but the token itself has broader capabilities
-				</li>
-			</ul>
 			<div class="tip-box">
-				<p>📌 <strong>For public repositories only:</strong> If you only need to create issues in public
-					repositories, you can select the more limited <code>public_repo</code> scope instead. This restricts
-					access to public repositories only.</p>
+				<p>💡 <strong>Tip:</strong> For public repositories only, you can use the more limited
+					<code>public_repo</code> scope instead.</p>
 			</div>
-
-			<h4 id="token-security">Security Best Practices</h4>
-			<div class="warning-box">
-				<p>⚠️ <strong>Treat your token like a password.</strong> Never commit it to a repository, share it with
-					others, or post it publicly. If you accidentally expose your token (e.g., in a public repository),
-					immediately revoke it on GitHub and generate a new one.</p>
+			<div class="tip-box">
+				<p>🔒 <strong>Security:</strong> For detailed information about token permissions, expiration best
+					practices, and fine-grained tokens, see our <a href="../security/github-token.html">GitHub Token
+						Security Guide</a>.</p>
 			</div>
-
-			<h4 id="fine-grained-tokens">Advanced: Fine-grained Personal Access Tokens</h4>
-			<p>For users who want more granular control over permissions, GitHub offers <strong>Fine-grained Personal
-					Access Tokens</strong>. These allow you to limit access to specific repositories and select only the
-				exact permissions needed. For more information, see the <a
-					href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token"
-					target="_blank">GitHub Docs on Fine-grained tokens</a>.</p>
 
 		</div>
 		<div style="display:contents" dir="ltr">

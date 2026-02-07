@@ -1,0 +1,129 @@
+---
+layout: help
+title: GitHub Token Security - QuickIssue
+---
+
+<article class="page sans">
+    <header>
+        <h1 class="page-title">GitHub Token Security Guide</h1>
+    </header>
+    <div class="page-body">
+        <p>This guide explains the security considerations for GitHub Personal Access Tokens (PATs) used with
+            QuickIssue.</p>
+
+        <h2 id="understanding-repo-scope">Understanding the <code>repo</code> Scope</h2>
+        <p>QuickIssue requires the <code>repo</code> scope to create issues on your behalf. Here's what you should know
+            about this permission:</p>
+
+        <h3>What <code>repo</code> access includes</h3>
+        <ul>
+            <li><strong>Full read and write access</strong> to all your public and private repositories</li>
+            <li>Access to code, commit statuses, repository invitations, and collaborators</li>
+            <li>Ability to create, edit, and delete issues, pull requests, and comments</li>
+            <li>Access to repository webhooks and deploy keys</li>
+        </ul>
+
+        <div class="warning-box">
+            <p>⚠️ <strong>Important:</strong> While QuickIssue only uses this permission to create issues, the token
+                itself has broader capabilities. Be mindful of where you store and use it.</p>
+        </div>
+
+        <h3>Alternative: <code>public_repo</code> scope</h3>
+        <p>If you only need to create issues in <strong>public repositories</strong>, you can select the more limited
+            <code>public_repo</code> scope instead of <code>repo</code>. This restricts the token's access to public
+            repositories only, providing better security if you don't need private repository access.</p>
+
+        <h2 id="token-expiration">Token Expiration Best Practices</h2>
+        <p>GitHub allows you to set an expiration period when creating a token. Here are our recommendations:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Expiration Period</th>
+                    <th>Recommendation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7 days</td>
+                    <td>Most secure, but requires frequent renewal</td>
+                </tr>
+                <tr>
+                    <td><strong>30–90 days</strong></td>
+                    <td>✅ Recommended balance of security and convenience</td>
+                </tr>
+                <tr>
+                    <td>1 year</td>
+                    <td>Convenient but higher risk if compromised</td>
+                </tr>
+                <tr>
+                    <td>No expiration</td>
+                    <td>⚠️ Not recommended for security reasons</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="tip-box">
+            <p>💡 <strong>When your token expires:</strong> QuickIssue will prompt you to re-authenticate. Simply create
+                a new token following the same steps and enter it in the app.</p>
+        </div>
+
+        <h2 id="security-best-practices">Security Best Practices</h2>
+        <p>Your GitHub token is as sensitive as your password. Follow these guidelines to keep it secure:</p>
+
+        <h3>Do's</h3>
+        <ul>
+            <li>✅ Set a reasonable expiration period (30–90 days)</li>
+            <li>✅ Use the minimum scope required (<code>public_repo</code> if possible)</li>
+            <li>✅ Regularly review your tokens at <a href="https://github.com/settings/tokens" target="_blank">GitHub
+                    Token Settings</a></li>
+            <li>✅ Revoke tokens you no longer use</li>
+        </ul>
+
+        <h3>Don'ts</h3>
+        <ul>
+            <li>❌ Never commit your token to a repository</li>
+            <li>❌ Never share your token with others</li>
+            <li>❌ Never post your token in public forums or chat</li>
+            <li>❌ Never store your token in plain text files</li>
+        </ul>
+
+        <div class="warning-box">
+            <p>⚠️ <strong>If your token is exposed:</strong> If you accidentally commit your token to a public
+                repository or share it, immediately go to <a href="https://github.com/settings/tokens"
+                    target="_blank">GitHub Token Settings</a>, delete the compromised token, and generate a new one.</p>
+        </div>
+
+        <h2 id="fine-grained-tokens">Fine-grained Personal Access Tokens</h2>
+        <p>For advanced users who want more granular control, GitHub offers <strong>Fine-grained Personal Access
+                Tokens</strong>. These provide:</p>
+
+        <ul>
+            <li><strong>Repository-specific access:</strong> Limit the token to specific repositories only</li>
+            <li><strong>Granular permissions:</strong> Select exactly which permissions to grant (e.g., Issues
+                read/write only)</li>
+            <li><strong>Organization policies:</strong> Better compliance with organization security policies</li>
+        </ul>
+
+        <p>To create a Fine-grained token:</p>
+        <ol>
+            <li>Go to <a href="https://github.com/settings/tokens?type=beta" target="_blank">GitHub Fine-grained Token
+                    Settings</a></li>
+            <li>Click "Generate new token"</li>
+            <li>Select the specific repositories you want to grant access to</li>
+            <li>Under "Repository permissions", enable "Issues" with "Read and write" access</li>
+            <li>Generate and copy the token</li>
+        </ol>
+
+        <div class="tip-box">
+            <p>📖 For detailed instructions, see the <a
+                    href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token"
+                    target="_blank">GitHub documentation on Fine-grained tokens</a>.</p>
+        </div>
+
+        <hr />
+        <figure class="link-to-page">
+            <a href="../getting-started/">← Back to Setup Guide</a>
+        </figure>
+    </div>
+</article>
