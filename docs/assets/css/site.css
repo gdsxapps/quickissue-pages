@@ -92,7 +92,9 @@ a:hover {
 }
 
 .logo-icon {
-  font-size: 1.5rem;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .logo-text {
