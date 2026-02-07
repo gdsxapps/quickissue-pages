@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/help.css' | relative_url }}">
+</head>
+
+<body>
+    <header class="help-header">
+        <div class="help-header-inner">
+            <a href="{{ site.baseurl }}/" class="help-logo">QuickIssue</a>
+            <nav class="help-lang-switch">
+                {% if page.url contains '/ja/' %}
+                <a href="{{ site.baseurl }}/help/getting-started/" title="English">English</a>
+                <span class="current" title="日本語">日本語</span>
+                {% else %}
+                <span class="current" title="English">English</span>
+                <a href="{{ site.baseurl }}/ja/help/getting-started/" title="日本語">日本語</a>
+                {% endif %}
+            </nav>
+        </div>
+    </header>
+
+    <main class="help-main">
+        <div class="notion-content">
+            {{ content }}
+        </div>
+    </main>
+
+    <footer class="help-footer">
+        <small>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}.
+            <a href="mailto:gdsx.apps@gmail.com">gdsx.apps@gmail.com</a>
+        </small>
+    </footer>
+</body>
+
+</html>

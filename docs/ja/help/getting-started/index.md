@@ -1,5 +1,5 @@
 ---
-layout: default-ja
+layout: help
 title: はじめに - QuickIssue
 lang: ja
 ---
