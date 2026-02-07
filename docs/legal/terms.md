@@ -5,7 +5,7 @@ title: Terms of Use - QuickIssue
 
 # Terms of Use
 
-This app uses the Apple Standard End User License Agreement (EULA).
+**QuickIssue: IdeaDrop** (hereinafter referred to as "QuickIssue") uses the Apple Standard End User License Agreement (EULA).
 
 [Apple Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
 

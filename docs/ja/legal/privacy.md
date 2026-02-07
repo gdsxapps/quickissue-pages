@@ -6,7 +6,7 @@ lang: ja
 
 # プライバシーポリシー
 
-QuickIssue はあなたのプライバシーを尊重します。
+**QuickIssue: IdeaDrop**（以下「QuickIssue」）はあなたのプライバシーを尊重します。
 
 ## 収集する情報
 

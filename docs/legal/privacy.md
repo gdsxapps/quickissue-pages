@@ -5,7 +5,7 @@ title: Privacy Policy - QuickIssue
 
 # Privacy Policy
 
-QuickIssue respects your privacy.
+**QuickIssue: IdeaDrop** (hereinafter referred to as "QuickIssue") respects your privacy.
 
 ## Information We Collect
 
