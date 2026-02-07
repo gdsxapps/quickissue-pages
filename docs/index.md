@@ -5,7 +5,7 @@ title: QuickIssue
 
 # QuickIssue
 
-A fast way to create GitHub issues from your Mac.
+A fast way to create GitHub issues.
 
 ## Quick Links
 
