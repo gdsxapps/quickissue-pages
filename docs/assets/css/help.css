@@ -356,3 +356,133 @@ body {
     padding-top: 0;
     border-top: none;
 }
+
+/* ------------------------------------------------------- */
+/* Help article rhythm normalization (Notion export fixes) */
+/* Scoped to help layout only to avoid side effects.       */
+/* ------------------------------------------------------- */
+
+.help-main .notion-content {
+    font-size: clamp(1rem, 0.98rem + 0.16vw, 1.06rem);
+    line-height: 1.7;
+    color: #2e3339;
+    white-space: normal;
+}
+
+/* Notion sometimes injects display:contents / pre-wrap via inline style. */
+.help-main .notion-content .page-body > div[style*="display:contents"] {
+    display: block !important;
+}
+
+.help-main .notion-content .page-body,
+.help-main .notion-content .page-body > div,
+.help-main .notion-content p {
+    white-space: normal !important;
+}
+
+.help-main .notion-content .page-body > div {
+    margin: 0;
+}
+
+/* Keep paragraph rhythm stable between sections. */
+.help-main .notion-content p {
+    margin: 0.75em 0;
+}
+
+.help-main .notion-content .page-body > div > :first-child {
+    margin-top: 0;
+}
+
+.help-main .notion-content .page-body > div > :last-child {
+    margin-bottom: 0;
+}
+
+/* Section headers: stronger separation for h2, tighter for h3/h4. */
+.help-main .notion-content h2 {
+    margin-top: 2.15rem;
+    margin-bottom: 0.55rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid #e4e8ef;
+    line-height: 1.28;
+}
+
+.help-main .notion-content h3 {
+    margin-top: 1.35rem;
+    margin-bottom: 0.32rem;
+    line-height: 1.3;
+}
+
+.help-main .notion-content h4 {
+    margin-top: 1.05rem;
+    margin-bottom: 0.24rem;
+    line-height: 1.35;
+    color: #374252;
+}
+
+.help-main .notion-content :is(h2, h3, h4) + p {
+    margin-top: 0.45em;
+}
+
+/* Step headings are a navigation anchor in setup guides. */
+.help-main .notion-content h2[id^="step-"] {
+    color: #0f66c3;
+    font-weight: 700;
+    margin-top: 2.35rem;
+    padding-top: 0;
+    border-top: none;
+}
+
+.help-main .notion-content h2[id^="step-"]:first-of-type {
+    margin-top: 0.8rem;
+}
+
+/* Screenshot presentation: centered, consistent spacing, app-like frame. */
+.help-main .notion-content figure,
+.help-main .notion-content figure.image {
+    margin: 1rem auto;
+}
+
+.help-main .notion-content figure.image > a {
+    display: block;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.help-main .notion-content figure.image img,
+.help-main .notion-content img[style*="width"] {
+    display: block;
+    width: auto !important; /* neutralize Notion's inline width */
+    max-width: min(100%, 720px) !important;
+    height: auto !important;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #d9e1ea;
+    background-color: #fff;
+}
+
+.help-main .notion-content figure.image + figure.image {
+    margin-top: 1rem;
+}
+
+/* Tip/Warning: visible but calm. */
+.help-main .notion-content .tip-box,
+.help-main .notion-content .warning-box {
+    margin: 0.9rem 0;
+    padding: 0.68rem 0.82rem;
+    border-radius: 8px;
+    border: 1px solid #dce4ee;
+    border-left-width: 4px;
+    font-size: 0.93rem;
+    line-height: 1.58;
+}
+
+.help-main .notion-content .tip-box {
+    background-color: #f5f9ff;
+    border-left-color: #5b8fcc;
+}
+
+.help-main .notion-content .warning-box {
+    background-color: #fff9ef;
+    border-color: #efe3cf;
+    border-left-color: #d2a35a;
+}
